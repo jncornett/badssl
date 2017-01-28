@@ -3,7 +3,7 @@ A library for simplified certificate generation that is probably wrong, dirty, o
 
 ## model
 This package models an (understandably) un(der)used TLS/SSL system where there are no intermediate authorities.
-There are no certificate chains. There is only an authority and it's immediate children.
+There are no certificate chains. There is only an authority and its immediate children.
 
 # disclaimer
 This package is intended to be used for testing, experimentation and development.
