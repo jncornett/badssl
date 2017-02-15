@@ -22,7 +22,7 @@ type PublicKey struct {
 // GetPEM implements the Encodable interface for PublicKey.
 // GetPEM encodes the associated public key in PEM format.
 func (k *PublicKey) GetPEM() (PEM, error) {
-	der, err := x509.MarshalPKIXPublicKey(k.privateKey)
+	der, err := x509.MarshalPKIXPublicKey(&k.privateKey.PublicKey)
 	if err != nil {
 		return nil, err
 	}
